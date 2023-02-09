@@ -1,0 +1,257 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Contrato_por_Num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "lockerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numContrato",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "edificio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "tamano",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "precio_dia_dia",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duracionContrato",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "uniandes",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "estudiante",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Locker_por_Num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "lockerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numContrato",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "edificio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "tamano",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "precio_dia",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "libre",
+						"type": "bool"
+					},
+					{
+						"internalType": "address payable",
+						"name": "uniandes",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "estudianteActual",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_edificio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tamano",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_precio_dia",
+						"type": "uint256"
+					}
+				],
+				"name": "anadirLocker",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "contratoTerminado",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "entregarLocker",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_duracion_contrato",
+						"type": "uint256"
+					}
+				],
+				"name": "firmarContrato",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num_contratos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num_lockers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LockersContract.sol": "Lockers"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LockersContract.sol": {
+			"keccak256": "0xda0308acbdc164652466bd598e70ab5287f1b8aa77604219a9a5b6a9d329c461",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9cf4190aa3dadfddb1ab94e7522c1392c0770d5bd4b8988744847891096609d1",
+				"dweb:/ipfs/QmTJjLqw5BiJzcDBrsawhNeB9Gcij9NB46ExTgW2gEe8po"
+			]
+		}
+	},
+	"version": 1
+}
